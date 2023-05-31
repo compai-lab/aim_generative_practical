@@ -12,7 +12,7 @@
 # limitations under the License.
 
 from __future__ import annotations
-from simplex_noise import generate_noise
+from model.simplex_noise import generate_noise
 
 import math
 import numpy as np
@@ -20,9 +20,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from diffusion_unet import DiffusionModelUNet
-from schedulers.ddpm import DDPMScheduler
-from schedulers.ddim import DDIMScheduler
+from model.diffusion_unet import DiffusionModelUNet
+from model.schedulers.ddpm import DDPMScheduler
+from model.schedulers.ddim import DDIMScheduler
 
 from tqdm import tqdm
 has_tqdm = True

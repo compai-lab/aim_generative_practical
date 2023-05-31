@@ -33,8 +33,8 @@ from __future__ import annotations
 import numpy as np
 import torch
 
-from net_utils.scheduler import Scheduler
-from net_utils.simplex_noise import generate_noise
+from model.schedulers.scheduler import Scheduler
+from model.simplex_noise import generate_noise
 
 
 class DDPMScheduler(Scheduler):

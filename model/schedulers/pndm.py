@@ -35,7 +35,7 @@ from typing import Any
 import numpy as np
 import torch
 
-from net_utils.scheduler import Scheduler
+from model.schedulers.scheduler import Scheduler
 
 class PNDMScheduler(Scheduler):
     """
