@@ -1,5 +1,5 @@
 import logging
-from os import XATTR_SIZE_MAX
+#from os import XATTR_SIZE_MAX
 #
 import matplotlib
 matplotlib.use("Agg")
