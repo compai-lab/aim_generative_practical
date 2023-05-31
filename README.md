@@ -4,7 +4,7 @@ Practical on deep generative models
 # AIM II - Practical Deep Generative Models
 
 This repository contains the practical for generative models. It is based on PyTorch and will mostly be focused on applying AEs and diffusion models to the task of unsupervised anomaly segmentation. 
-We provide healthy and anomalous data, a data-loader, a AE model, training routines, evaluaton scripts, and much more as a starting point. 
+We provide healthy and anomalous data, a data-loader, a AE model, training routines, evaluaton scripts, and others as a starting point. 
 
 [![Open Demo In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/compai-lab/aim_generative_practical/blob/main/main.ipynb)
 
