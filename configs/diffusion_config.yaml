@@ -13,9 +13,9 @@ num_res_blocks: 1
 num_head_channels: 256
 
 # Scheduling and noising scheme
-train_scheduler: "ddim"
-inference_scheduler: "ddim"
-inference_steps: 200
+train_scheduler: "ddpm"
+inference_scheduler: "ddpm"
+inference_steps: 1000
 noise_level: 300
 noise_type: "gaussian"
 prediction_type: "epsilon"
