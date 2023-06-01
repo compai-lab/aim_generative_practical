@@ -35,7 +35,7 @@ class Evaluator:
         self.criterion_rec = L1Loss().to(device)
         self.l_pips_sq = lpips.LPIPS(pretrained=True, net='squeeze', use_dropout=True, eval_mode=True, spatial=True, lpips=True).to(device)
 
-    def evaluate_test(self):
+    def evaluate_healthy(self):
         """ TODO: TASK 1A """
         return None
 
