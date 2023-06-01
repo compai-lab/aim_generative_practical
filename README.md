@@ -19,13 +19,13 @@ git clone https://github.com/compai-lab/aim_generative_practical.git
 
 Create (and activate) a new virtual environment (requires conda)
 ```shell
-conda create --name mad python=3.9
-conda activate mad
+conda create --name aim python=3.9
+conda activate aim
 ```
 
 Install the required packages
 ```shell
-cd mad_seminar_s23
+cd aim_generative_practical
 python -m pip install -r requirements.txt
 ```
 
