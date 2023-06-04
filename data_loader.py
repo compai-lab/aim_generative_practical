@@ -88,7 +88,7 @@ class TrainDataModule(pl.LightningDataModule):
 
 class TestDataset(Dataset):
 
-    def __init__(self, img_csv: str, pos_mask_csv: str, neg_mask_csv: str, target_size=(64, 64)):
+    def __init__(self, img_csv: str, pos_mask_csv: str = 'None', neg_mask_csv: str ='None', target_size=(64, 64)):
         """
         Loads anomalous images, their positive masks and negative masks from data_dir
 
@@ -104,8 +104,9 @@ class TestDataset(Dataset):
         super(TestDataset, self).__init__()
         self.target_size = target_size
         self.img_paths = pd.read_csv(img_csv)['filename'].tolist()
-        self.pos_mask_paths = pd.read_csv(pos_mask_csv)['filename'].tolist()
-        self.neg_mask_paths = pd.read_csv(neg_mask_csv)['filename'].tolist()
+        
+        self.pos_mask_paths = pd.read_csv(pos_mask_csv)['filename'].tolist() if pos_mask_csv is not 'None' else self.img_paths  
+        self.neg_mask_paths = pd.read_csv(neg_mask_csv)['filename'].tolist() if neg_mask_csv is not 'None' else self.img_paths  
 
         assert len(self.img_paths) == len(self.pos_mask_paths) == len(self.neg_mask_paths)
 
